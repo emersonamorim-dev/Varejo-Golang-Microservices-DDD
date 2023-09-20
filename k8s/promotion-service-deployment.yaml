@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: promotion-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: promotion-service
+  template:
+    metadata:
+      labels:
+        app: promotion-service
+    spec:
+      containers:
+      - name: promotion-service
+        image: promotion-service:local
+        ports:
+        - containerPort: 8087

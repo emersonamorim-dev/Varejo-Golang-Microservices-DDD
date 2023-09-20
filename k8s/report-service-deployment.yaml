@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: report-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: report-service
+  template:
+    metadata:
+      labels:
+        app: report-service
+    spec:
+      containers:
+      - name: report-service
+        image: report-service:local
+        ports:
+        - containerPort: 8088

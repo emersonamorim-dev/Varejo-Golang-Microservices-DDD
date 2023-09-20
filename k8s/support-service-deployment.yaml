@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: support-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: support-service
+  template:
+    metadata:
+      labels:
+        app: support-service
+    spec:
+      containers:
+      - name: support-service
+        image: support-service:local
+        ports:
+        - containerPort: 8089

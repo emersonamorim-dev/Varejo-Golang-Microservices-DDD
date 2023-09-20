@@ -1,0 +1,65 @@
+pipeline {
+    agent any
+
+    environment {
+        // Aqui variáveis de ambiente para MongoDB aqui
+        MONGO_DB_URI = 'mongodb://myuser:mypassword@localhost:27017/mydb'
+        MY_API_KEY = 'some-api-key'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Clona o código do repositório
+                checkout scm
+            }
+        }
+
+        stage('Build & Test') {
+            steps {
+                // Compila e testa a aplicação
+                sh 'make build'
+                sh 'make test'
+            }
+        }
+
+        stage('Docker') {
+            steps {
+                // Construir e publicar imagem Docker
+                script {
+                    docker.build("my-app:${env.BUILD_ID}")
+                    docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+                        docker.image("my-app:${env.BUILD_ID}").push()
+                    }
+                }
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                // Fazer o deploy usando o Terraform
+                sh 'cd terraform && terraform init'
+                sh 'cd terraform && terraform apply -auto-approve'
+            }
+        }
+    }
+
+     post {
+         always {
+             // Por exemplo, arquivar o binário compilado após a execução do pipeline
+             archiveArtifacts artifacts: '**/bin/myapp', allowEmptyArchive: true
+     
+             // Arquivar logs de teste se estiverem sendo salvos em um formato específico 
+             archiveArtifacts artifacts: '**/test-logs/*.log', allowEmptyArchive: true
+         }
+         failure {
+             // Enviar uma notificação em caso de falha
+             mail to: 'devteam@example.com',
+                  subject: "Falha no Pipeline: ${currentBuild.fullDisplayName}",
+                  body: "Algo deu errado. Verifique o build ${env.BUILD_URL}"
+         }
+     }
+     
+
+
+}

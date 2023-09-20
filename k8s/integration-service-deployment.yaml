@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: integration-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: integration-service
+  template:
+    metadata:
+      labels:
+        app: integration-service
+    spec:
+      containers:
+      - name: integration-service
+        image: integration-service:local
+        ports:
+        - containerPort: 8082
+
