@@ -75,7 +75,7 @@ Oferece suporte ao cliente e gerencia tickets, reclamações e feedback.
 
 ### Diagrana da Aplicação:
 
-
+<img align="center" height="900" width="720" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg](https://raw.githubusercontent.com/emersonamorim-dev/Varejo-Golang-Microservices-DDD/main/common/diagram.png" />
 
  ### 🛠 Tecnologias Usadas
 
