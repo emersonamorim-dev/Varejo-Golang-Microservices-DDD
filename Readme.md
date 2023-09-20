@@ -45,6 +45,16 @@ go run main.go
 go run main.go
 ```
 
+### Suba a Imagem do Kafka para aplicação funcionar na pasta raiz:
+```
+docker-compose up -d
+```
+
+#### Acesse o Kafka Drops:
+```
+http://localhost:19000
+```
+
 
 ### 1. `customer-service`
 Responsável pela gestão de clientes, incluindo criação, atualização, recuperação e exclusão de informações do cliente.
