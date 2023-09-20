@@ -77,7 +77,7 @@ Oferece suporte ao cliente e gerencia tickets, reclamações e feedback.
 
 
 
- # 🛠 Tecnologias Usadas
+ ### 🛠 Tecnologias Usadas
 
 ## ⚙️ Backend
 
