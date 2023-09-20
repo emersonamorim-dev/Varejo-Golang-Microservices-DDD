@@ -1,5 +1,5 @@
 package main
-
+ 
 import (
 	"crypto/rand"
 	"encoding/base64"
