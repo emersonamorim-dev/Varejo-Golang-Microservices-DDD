@@ -83,7 +83,7 @@ Oferece suporte ao cliente e gerencia tickets, reclamações e feedback.
 
 - **DDD (Domain-Driven Design)**
   
-- **Banco de Dados MongoDB**
+- **MongoDB**
   
 - **Kafka**
   
