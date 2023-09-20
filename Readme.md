@@ -45,7 +45,7 @@ go run main.go
 go run main.go
 ```
 
-### Suba a Imagem do Kafka para aplicação funcionar na pasta raiz:
+#### Suba a Imagem do Kafka para aplicação funcionar na pasta raiz:
 ```
 docker-compose up -d
 ```
