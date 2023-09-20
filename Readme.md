@@ -109,19 +109,19 @@ Oferece suporte ao cliente e gerencia tickets, reclamações e feedback.
 
 ## ⚙️ Backend
 
-- ![DDD Icon](URL_TO_ICON_IMAGE_FOR_DDD) **DDD (Domain-Driven Design)**
+- **DDD (Domain-Driven Design)**
   
-- ![MongoDB Icon](https://camo.githubusercontent.com/9ebde7ca22ab3f3b4bf92d2743804ab9e581e413a16cdf3626c2092e69967d80/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6d6f6e676f64622f6d6f6e676f64622d6f726967696e616c2e737667) **Banco de Dados MongoDB**
+- **Banco de Dados MongoDB**
   
-- ![Kafka Icon](https://github.com/devicons/devicon/blob/v2.15.1/icons/apachekafka/apachekafka-original-wordmark.svg) **Kafka**
+- **Kafka**
   
-- ![Docker Icon](https://camo.githubusercontent.com/f64a041d6d0cda76988a117724ce3b3272b8fc5f9f742c4dcb9160be9a2c41c1/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f646f636b65722f646f636b65722d706c61696e2e737667) **Docker**
+- **Docker**
   
-- ![Kubernetes Icon](https://github.com/devicons/devicon/blob/v2.15.1/icons/kubernetes/kubernetes-plain-wordmark.svg) **Kubernetes**
+- **Kubernetes**
   
-- ![Terraform Icon](URL_TO_ICON_IMAGE_FOR_TERRAFORM) **Terraform**
+- **Terraform**
 
-- ![Jenkins Icon](https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/jenkins/jenkins-original.svg) **Jenkins**
+- **Jenkins**
 
 
 
