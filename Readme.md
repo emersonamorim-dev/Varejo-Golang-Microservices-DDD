@@ -28,7 +28,22 @@ Codificação em Golang com uso de Framework GIN o projeto **Varejo-Golang-Micro
 
 - **Programação**: A aplicação é predominantemente orientada a objetos, aproveitando as vantagens de encapsulamento, herança e polimorfismo.
 
-## Microserviços
+## Microserviços Varejo
+
+- Rode a aplicação de forma local com comando:
+
+```
+go run main.go
+```
+
+- Para rodar cada Microservice local em separado acesse o diretório:
+```
+/customer-service/api
+```
+- Isso para acessa cada Microservice em separado
+```
+go run main.go
+```
 
 ### 1. `customer-service`
 Responsável pela gestão de clientes, incluindo criação, atualização, recuperação e exclusão de informações do cliente.
