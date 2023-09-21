@@ -92,18 +92,18 @@ func (h *OrderHandler) GetAllOrders(c *gin.Context) {
 func (h *OrderHandler) GetOrderByID(c *gin.Context) {
 	orderID := c.Param("id")
 	if orderID == "" {
-		c.JSON(400, gin.H{"error": "Order ID is required"})
+		c.JSON(400, gin.H{"error": "O ID do pedido é obrigatório"})
 		return
 	}
 
 	order, err := h.Service.GetOrderByID(orderID)
 	if err != nil {
-		c.JSON(500, gin.H{"error": "Error fetching order"})
+		c.JSON(500, gin.H{"error": "Erro ao buscar pedido"})
 		return
 	}
 
 	if order == nil {
-		c.JSON(404, gin.H{"error": "Order not found"})
+		c.JSON(404, gin.H{"error": "Pedido não encontrado"})
 		return
 	}
 
