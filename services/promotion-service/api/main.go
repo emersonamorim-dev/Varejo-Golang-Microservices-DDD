@@ -40,7 +40,7 @@ func main() {
 	// Initialize the handler with the services
 	promotionHandler := handler.NewPromotionHandler(promotionService)
 
-	// Setting up the routes
+	// Configurando as rotas
 	r.GET("/promotions", promotionHandler.ListPromotions)
 	r.GET("/promotions/:id", promotionHandler.GetPromotionByID)
 	r.POST("/promotions", promotionHandler.AddPromotion)
