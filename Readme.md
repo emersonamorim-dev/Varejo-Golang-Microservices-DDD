@@ -90,7 +90,8 @@ Oferece suporte ao cliente e gerencia tickets, reclamações e feedback.
  ### 🛠 Tecnologias Usadas
 
 ## ⚙️ Backend
-
+- **Golang (1.20)**
+- 
 - **DDD (Domain-Driven Design)**
   
 - **MongoDB**
