@@ -96,7 +96,7 @@ func (r *MongoSupportRepository) FindByID(id string) (*model.Support, error) {
 func (r *MongoSupportRepository) Save(support *model.Support) error {
 	supportCollection := r.client.Database("supportDB").Collection("supports")
 
-	// Inserir o suporte na coleção
+	// Insere o suporte na coleção
 	_, err := supportCollection.InsertOne(context.TODO(), support)
 	if err != nil {
 		log.Printf("Erro ao inserir suporte no MongoDB: %v\n", err)
