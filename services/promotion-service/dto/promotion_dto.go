@@ -17,7 +17,7 @@ type PromotionDTO struct {
 	ProductID     string            `json:"productId"`
 	Status        model.PromoStatus `json:"status"`
 	UpdatedAt     time.Time         `json:"updatedAt"`
-	// ... quaisquer outros campos que você queira adicionar ...
+
 }
 
 // A estrutura ProductReferenceDTO pode ser usada se você quiser incluir 
