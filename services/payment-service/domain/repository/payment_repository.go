@@ -91,7 +91,7 @@ func (r *MongoPaymentRepository) FindByID(id string) (*model.Payment, error) {
 func (r *MongoPaymentRepository) Save(payment *model.Payment) error {
 	collection := r.client.Database("paymentDB").Collection("payments")
 
-	// Inseri o pagamento na coleção
+	// Insere o pagamento na coleção
 	_, err := collection.InsertOne(context.TODO(), payment)
 	if err != nil {
 		log.Printf("Erro ao inserir pagamento no MongoDB: %v\n", err)
