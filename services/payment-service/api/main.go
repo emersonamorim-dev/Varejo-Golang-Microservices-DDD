@@ -38,7 +38,7 @@ func main() {
 	paymentService := service.NewPaymentService(paymentRepo)
 	paymentHandler := handler.NewPaymentHandler(paymentService)
 
-	// Setting up the routes
+	// Configurando as rotas
 	r.GET("/payment", paymentHandler.GetAllPayments)
 	r.GET("/payment/:id", paymentHandler.GetPaymentByID)
 	r.POST("/payment", paymentHandler.AddPayment)
