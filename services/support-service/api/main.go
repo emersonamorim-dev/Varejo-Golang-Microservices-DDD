@@ -38,7 +38,7 @@ func main() {
 	supportService := service.NewSupportService(supportRepo)
 	supportHandler := handler.NewSupportHandler(supportService)
 
-	// Setting up the routes
+	// Configurando as rotas
 	authorized.GET("/supports", supportHandler.ListSupports)
 	authorized.GET("/supports/:id", supportHandler.GetSupportByID)
 	authorized.POST("/supports", supportHandler.AddSupport)
