@@ -17,7 +17,7 @@ const defaultKafkaBroker = "localhost:9092"
 func main() {
 	r := gin.Default()
 
-	// Defina valores padrão para variáveis de ambiente.
+	// Define valores para variáveis de ambiente.
 	mongoURI := os.Getenv("MONGO_URI")
 	if mongoURI == "" {
 		mongoURI = defaultMongoURI
@@ -38,7 +38,7 @@ func main() {
 	locationService := service.NewLocationService(locationRepo)
 	locationHandler := handler.NewLocationHandler(locationService)
 
-	// Setting up the routes
+	// Configura as rotas
 	r.GET("/locations", locationHandler.GetLocation)
 	r.GET("/locations/:id", locationHandler.GetLocationByID)
 	r.POST("/locations", locationHandler.AddLocation)
