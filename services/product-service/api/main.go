@@ -38,7 +38,7 @@ func main() {
 	authorized := r.Group("/")
 	authorized.Use(middleware.AuthMiddleware())
 
-	// Setting up the routes
+	// Configurando as rotas
 	r.GET("/products", productHandler.ListProducts)
 	r.GET("/products/:id", productHandler.GetProductByID)
 	r.POST("/products", productHandler.AddProduct)
