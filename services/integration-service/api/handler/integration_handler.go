@@ -167,7 +167,7 @@ func (h *IntegrationHandler) DeleteIntegrationData(c *gin.Context) {
 	c.Status(200)
 }
 
-// Lógica para buscar todos os dados de integração do banco de dados
+// Buscar todos os dados de integração do banco de dados
 func (h *IntegrationHandler) ListIntegrationData(c *gin.Context) {
 	datas, err := h.Service.ListAllIntegrationData()
 	if err != nil {
