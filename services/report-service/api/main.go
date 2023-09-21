@@ -38,7 +38,7 @@ func main() {
 	reportService := service.NewReportService(reportRepo)
 	reportHandler := handler.NewReportHandler(reportService)
 
-	// Setting up the routes
+	// Configurando as rotas
 	r.GET("/reports", reportHandler.ListReports)
 	r.GET("/reports/:id", reportHandler.GetReportByID)
 	r.POST("/reports", reportHandler.AddReport)
