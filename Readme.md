@@ -30,6 +30,16 @@ Codificação em Golang com uso de Framework GIN o projeto **Varejo-Golang-Micro
 
 ## Microserviços Varejo
 
+#### Suba o contêineres Docker do Kafka para aplicação funcionar na pasta raiz:
+```
+docker-compose up -d
+```
+
+#### Acesse o Kafka Drops:
+```
+http://localhost:19000
+```
+
 #### Rode a aplicação de forma local com comando:
 
 ```
@@ -45,15 +55,6 @@ go run main.go
 go run main.go
 ```
 
-#### Suba a Imagem do Kafka para aplicação funcionar na pasta raiz:
-```
-docker-compose up -d
-```
-
-#### Acesse o Kafka Drops:
-```
-http://localhost:19000
-```
 
 
 ### 1. `customer-service`
