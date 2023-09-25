@@ -30,7 +30,7 @@ Codificação em Golang com uso de Framework GIN o projeto **Varejo-Golang-Micro
 
 ## Microserviços Varejo
 
-#### Suba o contêineres Docker do Kafka para aplicação funcionar na pasta raiz:
+#### Suba o docker-compose.yml do Kafka para aplicação funcionar que está pasta raiz:
 ```
 docker-compose up -d
 ```
