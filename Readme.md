@@ -1,4 +1,4 @@
-# Varejo-Golang-Microservices-DDD 🚀 🔄 🌐 
+# Varejo-Golang-Microservices-DDD 🚀 🔄 🌐
 
 Codificação em Golang com uso de Framework GIN o projeto **Varejo-Golang-Microservices** é uma solução completa e robusta para gerenciamento de varejo, implementado usando Go (Golang) e modelado de acordo com o padrão de modelagem Domain-Driven Design (DDD). Com uma arquitetura de microserviços, essa solução abrange várias funcionalidades do setor de varejo, desde gestão de clientes até relatórios e suporte.
 
